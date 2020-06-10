@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12470906-2A35-4447-8785-DDD11D9847A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryManagementsystem</RootNamespace>
+    <AssemblyName>LibraryManagementsystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STonclickingsearchforbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STonclickingsearchforbook.Designer.cs">
+      <DependentUpon>STonclickingsearchforbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STonclickingviewbooklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STonclickingviewbooklist.Designer.cs">
+      <DependentUpon>STonclickingviewbooklist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentsearchforbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentsearchforbook.Designer.cs">
+      <DependentUpon>studentsearchforbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issueabook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issueabook.Designer.cs">
+      <DependentUpon>issueabook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyabook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyabook.Designer.cs">
+      <DependentUpon>modifyabook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onclickingdeleteabook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onclickingdeleteabook.Designer.cs">
+      <DependentUpon>onclickingdeleteabook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onclickingstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onclickingstudent.Designer.cs">
+      <DependentUpon>onclickingstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchabook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchabook.Designer.cs">
+      <DependentUpon>searchabook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Librarianloggedin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Librarianloggedin.Designer.cs">
+      <DependentUpon>Librarianloggedin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onclickingaddbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onclickingaddbook.Designer.cs">
+      <DependentUpon>onclickingaddbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="onclickinglibrarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="onclickinglibrarian.Designer.cs">
+      <DependentUpon>onclickinglibrarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchforbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchforbook.Designer.cs">
+      <DependentUpon>searchforbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBookList.Designer.cs">
+      <DependentUpon>ViewBookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewissuedbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewissuedbook.Designer.cs">
+      <DependentUpon>viewissuedbook.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STonclickingsearchforbook.resx">
+      <DependentUpon>STonclickingsearchforbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STonclickingviewbooklist.resx">
+      <DependentUpon>STonclickingviewbooklist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentsearchforbook.resx">
+      <DependentUpon>studentsearchforbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issueabook.resx">
+      <DependentUpon>issueabook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyabook.resx">
+      <DependentUpon>modifyabook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onclickingdeleteabook.resx">
+      <DependentUpon>onclickingdeleteabook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onclickingstudent.resx">
+      <DependentUpon>onclickingstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchabook.resx">
+      <DependentUpon>searchabook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Librarianloggedin.resx">
+      <DependentUpon>Librarianloggedin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onclickingaddbook.resx">
+      <DependentUpon>onclickingaddbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="onclickinglibrarian.resx">
+      <DependentUpon>onclickinglibrarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="searchforbook.resx">
+      <DependentUpon>searchforbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBookList.resx">
+      <DependentUpon>ViewBookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewissuedbook.resx">
+      <DependentUpon>viewissuedbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
